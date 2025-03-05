@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>In Balance Studio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lustria&family=Quintessential&display=swap" rel="stylesheet"> 
+    </head>
+
+    <body>
+        <div class="logo">
+            <img id="logoimg" src="imgs/inbalancelogo.png" alt="In Balance Studio Logo">
+        </div>
+    
+        <div class="contact">
+            <h2>Contact or Book</h2>
+            <h3>Channing SmithBump</h3>
+            <p>116 Pendleton Street SW STE B</p>
+            <p>Aiken, SC, 29801</p>
+            <p>&#40;507&#41; 279-0990</p>
+            <p>channing1192&#64;gmail.com</p>
+        </div>
+
+        <h2>Session Types</h2>
+        <div class="sesTypes">
+                <div id="sesText">
+                    <p class="sHeading">PRIVATE SESSIONS $70</p>
+                    <p>These sessions are typically 1 hour long and are customizable to the client&#39;s skill or level. 
+                    If 4 or more sessions are pre purchased you will receive $5 off per session.</p>
+
+                    <p class="sHeading">SEMI PRIVATE $40 PER PERSON</p>
+                    <p>These are shared workouts either with a partner of your choice or you might be grouped with another client. 
+                    We will try and pair you with someone of similar knowledge if possible.</p>
+
+                    <p class="sHeading">45 MINUTE SESSIONS $55</p>
+                    <p>These sessions are for clients that have a good concept of the exercises and maybe an hour workout is too much or have limited time. 
+                    This is a faster paced session.</p>
+                </div>
+                <div id="slideshow">
+                    <div class="slideshow-container">
+                        <div class="mySlides fade">
+                            <img src="imgs/DIP00916.jpg" alt="A woman stretching out her arm." style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                           <img src="imgs/DIP00769.jpg" alt="A woman laying down and stretching her legs." style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgs/DIP00884.jpg" alt="A woman perorforming a sit up." style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgs/IMG_0835.jpg" alt="A woman performing a while going to lay down." style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgs/DIP00887.jpg" alt="A woman performing a lunge." style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgs/IMG_0830.jpg" alt="A woman performing a row while laying down." style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgs/DIP00750.jpg" alt="A woman kneeling performing a row." style="width:100%">
+                        </div>
+                        <div class="mySlides fade">
+                            <img src="imgs/IMG_0842.jpg" alt="A woman performing a lateral stretch." style="width:100%">
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <h2>About Me</h2>
+        <div class="abtMeSec">
+            <div class="abtMeImg">
+                <img id="channing" src="imgs/DIP00589.jpg" alt="Headshot of Channing SmithBump">
+            </div>
+            <div class="abtMeTxt">
+                <p>My name is Channing Smith-Bump, I am a certified pilates instructor.</p>
+                <p>I operate In Balance Aiken pilates studio in downtown Aiken and have been teaching since 2002. I started doing pilates for my own fitness and felt like it was the best thing for my body. The longer I did it the better I felt and looked. I was hooked, so I stated my training and I&#39;ve been practicing and teaching ever since.</p>
+                <p>I have trained in many different pilates styles such as Physical Mind, Power Pilates, Balance Body, just to name a few. I have attended many additional courses such as, Active Isolated Stretching, Anatomy Trains, and Barre Pilates, along with exercise physiology. Learning how the body works and moves keeps me motivated and I try to share my knowledge with others.</p> 
+                <p>My specialty, if I have one, would be with rehabilitation and general fitness. I trained and competed in women&#39;s figure/bodybuilding for many years and also compete in the equestrian sport of working equitation. I love how Pilates helps with my riding. I enjoy combining the physical fitness world with pilates and always strive for keeping the pilates fundamentals in balance.</p>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides(){
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            for(i=0;i<slides.length; i++){
+                slides[i].style.display="none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length){
+                slideIndex=1;
+            }
+            slides[slideIndex-1].style.display="block";
+            setTimeout(showSlides, 5000);
+        }
+    </script>
+</html>

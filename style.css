@@ -1,0 +1,205 @@
+/* set background color -- matches logo color */
+body{
+    background-color: rgba(224,237,243,255);
+}
+
+/* fonts and text sizes */
+.quintessential-regular {
+    font-family: "Quintessential", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.lustria-regular {
+    font-family: "Lustria", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+h2, h3, .sHeading{
+    font-family: "Quintessential", "Lucida Handwriting", serif;
+}
+
+h2{
+    font-size: 45px;
+    text-align: center;
+}
+
+h3, .sHeading{
+    font-size: 25px;
+}
+
+p{
+    font-family: "Lustria", serif;
+    font-size: 20px;
+}
+
+div{
+    padding: 30px;
+}
+
+/* center logo, contact section, and other subheadings */
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact{
+    text-align: center;
+}
+
+/* resize images */
+#logoimg{
+    width: 20%;
+}
+
+#channing{
+    width: 60%;
+}
+
+.mySlides{
+    display: none;
+    justify-content: center;
+}
+
+#slideshow{
+    width: 80%;
+    justify-content: center;
+}
+
+.slideshow-container{
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+}
+
+.fade{
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade{
+    from{opacity: .8;}
+    to{opacity: 1;}
+}
+
+/* formatting text and images */
+.abtMeSec{
+    padding-top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.abtMeImg{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.abtMeTxt{
+    padding-left: 0;
+    padding-right: 120px;
+}
+
+#channing{
+    box-shadow: 10px 10px 25px grey;
+}
+
+.sesTypes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sesText{
+    width: 50%;
+}
+
+/* for when the screen begins to get smaller */
+@media (max-width: 1100px){
+
+
+    .logo{
+        padding-bottom: 0px;
+    }
+
+    #logoimg{
+        width: 30%;
+    }
+
+    /* change orientation of text and images */
+    .abtMeSec{
+        flex-wrap: wrap;
+    }
+
+    .sesTypes{
+        flex-wrap: wrap;
+    }
+
+    /* center the About Me and Session Type Text */
+    .abtMeTxt{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #sesText{
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+    }
+}
+
+/* for cellphones */
+@media (max-width: 600px){
+
+    /* make logo larger */
+
+    #logoimg{
+        width: 40%;
+    }
+
+    /* make text smaller */
+    p{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 27px;
+        margin: 0px;
+    }
+    h3, .sHeading{
+        font-size: 15px;
+    }
+
+    /* eliminate whitespace */
+    .sesTypes{
+        padding-bottom: 0px;
+        padding-top: 0px;
+    }
+
+    /* center the About Me and Session Type Text */
+    .abtMeTxt{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #sesText{
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 100%;
+    }
+
+    /* change slideshow size */
+    #slideshow{
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
