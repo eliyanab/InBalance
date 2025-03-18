@@ -16,7 +16,7 @@ body{
     font-style: normal;
 }
   
-h2, h3, .sHeading{
+h2, h3, .sHeading, .tagline{
     font-family: "Quintessential", "Lucida Handwriting", serif;
 }
 
@@ -27,6 +27,12 @@ h2{
 
 h3, .sHeading{
     font-size: 25px;
+}
+
+.tagline{
+    text-align: center;
+    font-size: 30px;
+    margin-top:0;
 }
 
 p{
@@ -43,6 +49,8 @@ div{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 .contact{
@@ -124,12 +132,16 @@ div{
 @media (max-width: 1100px){
 
 
-    .logo{
+    .logo, .tagline{
         padding-bottom: 0px;
     }
 
     #logoimg{
         width: 30%;
+    }
+
+    .tagline{
+        font-size: 25px;
     }
 
     /* change orientation of text and images */
@@ -173,6 +185,9 @@ div{
     }
     h3, .sHeading{
         font-size: 15px;
+    }
+    .tagline{
+        font-size: 20px;
     }
 
     /* eliminate whitespace */
